@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" parallel="classes" thread-count="3">
+
+    <!--<listeners>-->
+    <!--<listener class-name="com.testing.listener.CustomListener"></listener>-->
+    <!--</listeners>-->
+
+    <test name="TestRunner">
+        <classes>
+            <class name="runner.FirstTestRunner"/>
+            <class name="runner.SecondTestRunner"/>
+            <class name="runner.ThirdTestRunner"/>
+        </classes>
+    </test>
+
+</suite>

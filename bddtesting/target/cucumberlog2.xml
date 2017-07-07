@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="29.381641">
+<testcase classname="Register google account" name="Validate the error message is displayed" time="13.97424">
+<system-out><![CDATA[Given user is in the register page..........................................passed
+When user inputs account information as below...............................passed
+And user clicks Next step button............................................passed
+Then the error message display as below.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register google account" name="Validate the privacy policy popup is displayed" time="15.407401">
+<system-out><![CDATA[Given user is in the register page..........................................passed
+When user inputs account information as below...............................passed
+And user waits for 3 second.................................................passed
+And user clicks Next step button............................................passed
+Then the error message display as below.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

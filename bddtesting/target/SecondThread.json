@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validate the error message is displayed",
+        "description": "",
+        "id": "register-google-account-2;validate-the-error-message-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 189870,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookForScreenShot.takeScreenShot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12276602617,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is in the register page",
+            "match": {
+              "location": "RegisterStep.go_to_register_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 667434380,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user inputs account information as below",
+            "match": {
+              "location": "RegisterStep.input_account_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Firstname",
+                  "An"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Lastname",
+                  "Nguyen"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101664028,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks Next step button",
+            "match": {
+              "location": "RegisterStep.click_next_step_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 928348638,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the error message display as below",
+            "match": {
+              "location": "RegisterStep.assert_error_message_displays(String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 13,
+              "value": "You can\u0027t leave this empty."
+            }
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Validate the privacy policy popup is displayed",
+        "description": "",
+        "id": "register-google-account-2;validate-the-privacy-policy-popup-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 33356,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookForScreenShot.takeScreenShot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12003678738,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is in the register page",
+            "match": {
+              "location": "RegisterStep.go_to_register_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 242908647,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user inputs account information as below",
+            "match": {
+              "location": "RegisterStep.input_account_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Firstname",
+                  "An"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "Lastname",
+                  "Nguyen"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000009942,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user waits for 3 second",
+            "match": {
+              "location": "RegisterStep.wait_for_second()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90674319,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user clicks Next step button",
+            "match": {
+              "location": "RegisterStep.click_next_step_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70095836,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the error message display as below",
+            "match": {
+              "location": "RegisterStep.assert_error_message_displays(String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 25,
+              "value": "You can\u0027t leave this empty."
+            }
+          }
+        ]
+      }
+    ],
+    "name": "Register google account 2",
+    "description": "",
+    "id": "register-google-account-2",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Register2.feature"
+  }
+]

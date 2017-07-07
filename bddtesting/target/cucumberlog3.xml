@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="36.915487">
+<testcase classname="Register google account" name="Validate the error message is displayed" time="13.995388">
+<system-out><![CDATA[Given user is in the register page..........................................passed
+When user inputs account information as below...............................passed
+And user clicks Next step button............................................passed
+Then the error message display as below.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register google account" name="Validate the privacy policy popup is displayed" time="15.473076">
+<system-out><![CDATA[Given user is in the register page..........................................passed
+When user inputs account information as below...............................passed
+And user waits for 3 second.................................................passed
+And user clicks Next step button............................................passed
+Then the error message display as below.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register google account" name="Validate the privacy policy popup is displayed" time="7.447023">
+<failure message="java.lang.AssertionError: &#10;Expected: is &quot;You can't leave this empty..&quot;&#10;     but: was &quot;You can't leave this empty.&quot;&#13;&#10;&#9;at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;&#10;&#9;at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)&#13;&#10;&#9;at steps.RegisterStep.assert_error_message_displays(RegisterStep.java:42)&#13;&#10;&#9;at ✽.Then the error message display as below(src/test/java/features/Register3.feature:37)&#13;&#10;"><![CDATA[Given user is in the register page..........................................passed
+When user inputs account information as below...............................passed
+And user waits for 3 second.................................................passed
+And user clicks Next step button............................................passed
+Then the error message display as below.....................................failed
+
+StackTrace:
+java.lang.AssertionError: 
+Expected: is "You can't leave this empty.."
+     but: was "You can't leave this empty."
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at steps.RegisterStep.assert_error_message_displays(RegisterStep.java:42)
+	at ✽.Then the error message display as below(src/test/java/features/Register3.feature:37)
+]]></failure>
+</testcase>
+</testsuite>
